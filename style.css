@@ -1,0 +1,38 @@
+body, html {
+  background: black;
+  overflow: hidden;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+#startMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw; 
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0.125; }
+    50% { opacity: 1; }
+    100% { opacity: 0.125; }
+}
+
+
+@media screen and (max-width: 600px) {
+  #startMessage {
+    font-size: 4vw; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #startMessage {
+    font-size: 1.5vw; 
+  }
+}
